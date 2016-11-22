@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <h2 class="page-header">Edit Trip</h2>
+    <ul class="list-group">
+        <li class="list-group-item">Depart From: {{ trip.departFrom }}</li>
+        <li class="list-group-item">Destination: {{ trip.destination }}</li>
+        <li class="list-group-item">Description: {{ trip.description }}</li>
+        <li class="list-group-item">Publish Date: {{ trip.createDate|date('F j,Y,g:i a') }}</li>
+    </ul>
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+{% endblock %}

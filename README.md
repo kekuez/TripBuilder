@@ -1,2 +1,0 @@
-# TripBuilder
-Trip builder
